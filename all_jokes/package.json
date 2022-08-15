@@ -1,0 +1,23 @@
+{
+  "name": "all_jokes",
+  "version": "1.0.1",
+  "description": "This module allows you to get different jokes from a variety of choices.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DucksCorporation/Jokes.git"
+  },
+  "keywords": [
+    "jokes"
+  ],
+  "author": "Ducks_Corporation",
+  "license": "MIT",
+  "types": "./index.d.ts",
+  "bugs": {
+    "url": "https://github.com/DucksCorporation/Jokes/issues"
+  },
+  "homepage": "https://github.com/DucksCorporation/Jokes#readme"
+}
