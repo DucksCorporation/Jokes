@@ -27,4 +27,7 @@ module.exports.Jokes = class Jokes {
     help() {
         return "https://discord.gg/E5hPRnMUgq";
     };
+    getJokeCount() {
+        return file.length;
+    };
 };
