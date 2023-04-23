@@ -1,11 +1,10 @@
 //@ts-check
 const jokesType = ["dark", "limit", "dev", "normal", "beauf"];
 const file = require("./Bdd/jokes.json");
-const baseJoke = file[Math.floor(Math.random() * file.length)];
 
 module.exports.Jokes = class Jokes {
     getRandomJoke() {    
-        return baseJoke;
+        return file[Math.floor(Math.random() * file.length)];
     };
 
     getJokeByType(type) {
@@ -26,5 +25,8 @@ module.exports.Jokes = class Jokes {
 
     help() {
         return "https://discord.gg/E5hPRnMUgq";
+    };
+    getJokeCount() {
+        return file.length;
     };
 };
