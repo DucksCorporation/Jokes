@@ -1,4 +1,4 @@
-type JokeType =  "dark" | "limit" | "dev" | "normal" | "beauf";
+type JokeType =  "dark" | "limit" | "dev" | "normal" | "beauf" | "blonde";
 
 interface IJokes {
     id: Number;
@@ -8,11 +8,13 @@ interface IJokes {
 }
 
 declare class Jokes {
-    getRandomJoke(): IJokes;
-    getJokeByType(type: JokeType): IJokes;
-    getJokeById(id: number): IJokes;
-    help(): string;
-}
+    public getRandomJoke(): IJokes;
+    public getJokeByType(type: JokeType): IJokes;
+    public getJokeById(id: number): IJokes;
+    public getHelp(): string;
+    public getStats(): Record<string, number>;
 
+    private filterJoke(type: JokeType): IJokes;
+}
 
 export default Jokes;
