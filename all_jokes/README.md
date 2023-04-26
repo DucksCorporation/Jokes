@@ -8,10 +8,10 @@ const jokes = new Jokes();
 
 console.log(
     jokes.getRandomJoke(), //return a joke.
-    jokes.getJokeByType(JokeType), //jokeType: ["dark", "limit", "dev", "normal", "beau"];
+    jokes.getJokeByType(JokeType), //jokeType: ["dark", "limit", "dev", "normal", "beauf", "blonde"];
     jokes.getJokeById(Number), // return a joke via an id.
-    jokes.help(), //return the discord support server.
-    jokes.GetStats() //returns the number of available jokes. Under construction.
+    jokes.getHelp(), //return the discord support server.
+    jokes.getStats() //return the number of available jokes.
 );
 ```
 
@@ -47,7 +47,7 @@ console.log(
         }*/
 
 
-console.log(jokes.help());
+console.log(jokes.getHelp());
 //output => https://discord.gg/E5hPRnMUgq
 ```
 
